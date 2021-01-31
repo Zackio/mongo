@@ -20,7 +20,7 @@ const courseSchema = new mongoose.Schema({
 // Whats a modal here exactly, what is this?
 const Course = mongoose.model('course', courseSchema)
 
-// ?
+// Inserts into the DB using the model from above
 async function createCourse () {
   const course = new Course({
     name: 'Node.js Course 3',
